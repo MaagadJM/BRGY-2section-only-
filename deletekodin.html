@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- for ABOUT US SECTION -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- for ABOUT US SECTION -->
+
+    <!---------------------------------------------------- icon animation --------------------------------------------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css" />
+    <!---------------------------------------------------- icon animation --------------------------------------------->
+
+    <link rel="stylesheet" href="Optometrist DB.css" />
+
+    <title>BARANGAY ONLINE SYSTEM</title>
+
+    <style>
+        /* FontAwesome for working BootSnippet :> */
+        @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+        body {
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .scroll-link {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .scroll-link:hover {
+            color: #34a853;
+        }
+
+        /* h1,
+        p {
+            position: relative;
+            top: 30px;
+        } */
+
+        /* Style the navbar */
+        .navbar {
+            background-color: #34a853;
+            color: #ffffff;
+            /* border-bottom: 1px #000000 solid; */
+        }
+
+        /* .nav-menu ul li .link {
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            padding-bottom: 15px;
+            margin: 0 25px;
+        } */
+
+        .nav-link:hover,
+        .active {
+            border-bottom: 2px solid #fff;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+
+        /* Style the sections */
+        /* .section {
+            height: 100vh;
+
+        } */
+
+        /* .section1 {
+            background-color: #34a853;
+            color: white;
+            height: 100vh;
+        } */
+
+        .section2 {
+            background-color: #34a853;
+            color: #ffffff;
+            /* margin-top: 10px; */
+            height: 100vh;
+        }
+
+        .section2 h1 a {
+            position: relative;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            background-color: #00000089;
+            text-shadow: 4px 4px 40px rgb(0, 0, 0);
+            padding: 20px;
+            /* text-transform: uppercase; */
+            transition: color 0.3s linear;
+        }
+
+        .section2 h1 a:hover {
+            color: white;
+        }
+
+
+
+
+
+
+        /* --------------------------- SECTION 3 ---------------------- */
+
+        .section3 {
+            background-color: #ffffff;
+            color: #34a853;
+            margin-top: 10px;
+            height: 100vh;
+        }
+
+        .section3 h1 {
+            text-align: center;
+        }
+
+        .section3 h1 a {
+            position: relative;
+            text-align: center;
+            color: #34a853;
+            margin-bottom: 40px;
+            background-color: #00000089;
+            text-shadow: 4px 4px 40px rgb(0, 0, 0);
+            padding: 20px;
+            /* text-transform: uppercase; */
+            transition: color 0.3s linear;
+        }
+
+        .section3 h1 a:hover {
+            color: white;
+        }
+
+
+        /* --------------------------- SECTION 3 END ---------------------- */
+
+        /* --------------------------- SECTION 4 ---------------------- */
+
+        .section4 {
+            background-color: #ffffff;
+            /* color: #34A853; */
+            margin-top: 10px;
+            height: 100%;
+            /* padding-bottom: 50px; */
+        }
+
+        .section4 img {
+            position: relative;
+            height: 40%;
+            width: 40%;
+            left: 30%;
+        }
+
+        .section4 h1 a {
+            position: relative;
+            text-align: center;
+            color: #34a853;
+            margin-bottom: 40px;
+            background-color: #00000089;
+            text-shadow: 4px 4px 40px rgb(0, 0, 0);
+            padding: 20px;
+            /* text-transform: uppercase; */
+            transition: color 0.3s linear;
+        }
+
+        .section4 h1 a:hover {
+            color: white;
+        }
+
+        .section4 h4 {
+            position: relative;
+            text-align: center;
+        }
+
+        /* .brgy-ofc :where(#BRGY1, #BRGY2, #BRGY3, #BRGY4, #BRGY5) {
+            position: relative;
+            height: 100%;
+        } */
+
+        /* --------------------------- SECTION 4 END ---------------------- */
+
+        .section5 {
+            background-color: #2ecc71;
+            color: white;
+            margin-top: 10px;
+            height: 100vh;
+        }
+
+        .section6 {
+            background-color: #2ecc71;
+            color: white;
+            margin-top: 10px;
+            height: 100vh;
+        }
+
+        .close {
+            position: relative;
+            top: -40px;
+        }
+
+        #sgn-mdl {
+            /* background: linear-gradient(65deg, #194A84, #194A8478 75%, #9eb2d0 85%, #194A84); */
+            background-image: linear-gradient(128deg, #ffffff 65%, #34a853 40%);
+        }
+
+        #SU-btn {
+            font-weight: 500;
+            border-style: none;
+            color: #34a853;
+            background-color: #ffffff;
+            padding: 5px;
+            width: 100px;
+            margin-left: 5px;
+        }
+
+        #SI-btn {
+            font-weight: 500;
+            border-style: none;
+            color: #34a853;
+            background-color: #000000;
+            padding: 5px;
+            width: 100px;
+            margin-left: 5px;
+        }
+
+        #SULabel {
+            color: #34a853;
+        }
+
+        #SILabel {
+            color: #34a853;
+        }
+
+        #crt-acc {
+            position: relative;
+            color: #34a853;
+            background-color: #000000;
+            font-weight: 500;
+        }
+
+        #SI-lgn {
+            color: #34a853;
+            background-color: #000000;
+            font-weight: 500;
+        }
+
+        #crt-new-acc {
+            position: relative;
+            color: #000000;
+            background-color: #34a853;
+            font-weight: 500;
+        }
+
+        #frgt-pass {
+            position: relative;
+            color: #34a853;
+            top: -40px;
+            left: 20px;
+        }
+
+        .line {
+            position: relative;
+            top: -10px;
+            left: 3px;
+            width: 40%;
+            height: 1px;
+
+            background-color: #666;
+        }
+
+        /* ----------------------------------------------- Styles for tablets (768px to 1024px wide) ----------------------------------------------- */
+
+        /* @media (min-width: 768px) and (max-width: 1024px) {
+            #SU-btn {
+                font-weight: 500;
+                border-style: none;
+                color: #34A853;
+                padding: 8px;
+            }
+        } */
+
+        .form-control {
+            box-shadow: none;
+            font-weight: normal;
+            font-size: 13px;
+            overflow-y: scroll;
+        }
+
+        .navbar {
+            padding-left: 16px;
+            padding-right: 16px;
+            /* border-bottom: 1px solid #dfe3e8; */
+            border-radius: 0;
+        }
+
+        .nav-link img {
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            margin: -8px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .navbar .form-inline {
+            display: inline-block;
+        }
+
+        .navbar a {
+            color: #888;
+            font-size: 15px;
+            /* text-transform: uppercase; */
+            font-weight: 500;
+        }
+
+        /* Smooth slide animation for navigation links */
+        .navbar-nav a {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar-nav a:hover {
+            transform: translateY(-5px);
+        }
+
+        .navbar .sign-up-btn {
+            min-width: 110px;
+            max-height: 36px;
+        }
+
+        .navbar .dropdown-menu {
+            color: #999;
+            font-weight: normal;
+            border-radius: 1px;
+            border-color: #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar a,
+        .navbar a:active {
+            color: #888;
+            padding: 8px 20px;
+            background: transparent;
+            line-height: normal;
+        }
+
+        .navbar .navbar-form {
+            border: none;
+        }
+
+        .navbar .action-form {
+            width: 280px;
+            padding: 20px;
+            left: auto;
+            right: 0;
+            font-size: 14px;
+        }
+
+        .navbar .action-form a {
+            color: #33cabb;
+            padding: 0 !important;
+            font-size: 14px;
+        }
+
+        .navbar .action-form .hint-text {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .navbar .btn-primary,
+        .navbar .btn-primary:active {
+            color: #fff;
+            background: #33cabb !important;
+            border: none;
+        }
+
+        .navbar .btn-primary:hover,
+        .navbar .btn-primary:focus {
+            color: #fff;
+            background: #31bfb1 !important;
+        }
+
+        .navbar .social-btn .btn,
+        .navbar .social-btn .btn:hover {
+            color: #fff;
+            margin: 0;
+            padding: 0 !important;
+            font-size: 13px;
+            border: none;
+            transition: all 0.4s;
+            text-align: center;
+            line-height: 34px;
+            width: 47%;
+            text-decoration: none;
+        }
+
+        .navbar .social-btn .facebook-btn {
+            background: #507cc0;
+        }
+
+        .navbar .social-btn .facebook-btn:hover {
+            background: #4676bd;
+        }
+
+        .navbar .social-btn .twitter-btn {
+            background: #64ccf1;
+        }
+
+        .navbar .social-btn .twitter-btn:hover {
+            background: #4ec7ef;
+        }
+
+        .navbar .social-btn .btn i {
+            margin-right: 5px;
+            font-size: 16px;
+            position: relative;
+            top: 2px;
+        }
+
+        .or-seperator {
+            margin-top: 32px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+
+            color: #666;
+            padding: 0 8px;
+            width: 30px;
+            height: 30px;
+            font-size: 13px;
+            text-align: center;
+            line-height: 26px;
+            background: #34a853;
+            display: inline-block;
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            top: -15px;
+            z-index: 1;
+        }
+
+        .navbar .action-buttons .dropdown-toggle::after {
+            display: none;
+        }
+
+        .form-check-label input {
+            position: relative;
+            top: 1px;
+        }
+
+        .modal-body label {
+            font-weight: 500;
+        }
+
+        .modal-body::placeholder {
+            color: #34a853;
+        }
+
+        /* Change the color of all placeholder texts */
+
+        /* Change the color of placeholder text */
+        ::placeholder {
+            color: #34a853 !important;
+            /* Change the color to your preferred color */
+        }
+
+        /* ------------------------------------------------------------------ ABOUT US SECTION -------------------------------------------------------------- */
+
+        /* .mt-30 {
+            margin-top: 30px
+        }
+
+        .mt-40 {
+            margin-top: 40px
+        } */
+
+        /* .box5:after,
+        .box5:before {
+            content: ""
+        }
+
+        .box5 .icon li a {
+            text-align: center
+        }
+
+        .box5,
+        .box5 .icon li a {
+            overflow: hidden
+        }
+
+        .box5 .post {
+            font-style: italic
+        }
+
+        .box5 .icon li a {
+            border-radius: 50%
+        }
+
+        .box5 .title {
+            text-transform: uppercase
+        }
+
+        .box5 {
+            box-shadow: 0 0 3px rgba(0, 0, 0, .3)
+        }
+
+        .box5 .icon {
+            list-style: none;
+            padding: 0
+        }
+
+        .box5 .icon,
+        .box5 .icon li {
+            display: inline-block
+        }
+
+
+
+
+        .box5 {
+            background: #444;
+            position: relative
+        }
+
+        .box5:after,
+        .box5:before {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #10a5b8;
+            position: absolute;
+            top: -80px;
+            left: 15px;
+            opacity: 0;
+            z-index: 1;
+            transition: all .35s ease
+        }
+
+        .box5:after {
+            top: auto;
+            left: auto;
+            bottom: -80px;
+            right: 15px
+        }
+
+        .box5:hover:after,
+        .box5:hover:before {
+            opacity: .75;
+            transform: scale(8);
+            transition-delay: .15s
+        }
+
+        .box5 img {
+            width: 100%;
+            height: auto;
+            transition: all .35s ease-out 0s
+        }
+
+        .box5:hover img {
+            opacity: .4
+        }
+
+        .box5 .icon {
+            margin: 0;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            z-index: 2;
+            transform: scale(0);
+            transition: all .35s ease-out
+        }
+
+        .box5:hover .icon {
+            transform: scale(1);
+            transition-delay: .15s
+        }
+
+        .box5 .icon li a {
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background: #fff;
+            font-size: 18px;
+            color: #444;
+            margin-right: 10px;
+            position: relative;
+            transition: all .5s ease 0s
+        }
+
+        .box5 .icon li a:hover {
+            background: #444;
+            color: #fff
+        }
+
+        .box5 .box-content {
+            padding: 20px 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1
+        }
+
+        .box5 .title {
+            font-size: 20px;
+            font-weight: 800;
+            color: #fff;
+            margin: 0 0 5px;
+            opacity: 0;
+            transform: translate(-20px, -20px);
+            transition: all .35s ease-out
+        }
+
+        .box5:hover .title {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition-delay: .15s
+        }
+
+        .box5 .post {
+            display: inline-block;
+            font-size: 16px;
+            color: #fff;
+            opacity: 0;
+            transform: translate(-20px, -20px);
+            transition: all .35s ease-out
+        }
+
+        .box5:hover .post {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition-delay: .15s
+        }
+
+        @media only screen and (max-width:990px) {
+            .box5 {
+                margin-bottom: 30px
+            }
+        }
+
+ */
+
+        .panel-heading:hover {
+            cursor: pointer;
+        }
+
+        .panel-heading {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .side-tab:hover {
+            cursor: pointer;
+        }
+
+        .panel.panel-default {
+            border: none;
+            box-shadow: none !important;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .panel-heading {
+            border: none;
+            background-color: #34a853;
+            color: #000000;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px 0px 5px;
+            margin-bottom: 5px;
+        }
+
+        .panel-body {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 30px;
+
+            max-height: 300px;
+            /* Set your desired maximum height */
+            overflow-y: auto;
+            /* Add a vertical scrollbar when content exceeds the maximum height */
+        }
+
+        .panel-group {
+            position: relative;
+            /* You can add other styles to control the button's placement, e.g., top: 0; */
+            margin-top: 100px;
+            left: 70px;
+        }
+
+        .panel-title {
+            text-align: center;
+        }
+
+        .md-macbook-pro {
+            display: block;
+            width: 55.3125em;
+            height: 31.875em;
+            font-size: 13px;
+            margin: 0 auto;
+            margin-top: 90px;
+        }
+
+        /* ---- YUNG FONT-SIZE DITO SIYA YUNG TRIGGER NG RESPONSIVENESS NUNG DESKTOP ----- */
+        @media (max-width: 1199px) {
+            .md-macbook-pro {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .md-macbook-pro {
+                font-size: 10px;
+            }
+
+            .panel-group {
+                position: relative;
+                margin-right: 30px;
+                left: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .md-macbook-pro {
+                font-size: 7px;
+            }
+
+            .panel-group {
+                position: relative;
+                margin-right: 120px;
+            }
+
+            /* .panel-title {
+            text-align: center;
+        } */
+        }
+
+        @media (max-width: 320px) {
+            .md-macbook-pro {
+                font-size: 5px;
+            }
+
+            .panel-group {
+                position: relative;
+                margin-right: 90px;
+            }
+        }
+
+        /* ---- YUNG FONT-SIZE DITO SIYA YUNG TRIGGER NG RESPONSIVENESS NUNG DESKTOP ----- */
+
+        .md-macbook-pro .md-lid {
+            max-width: 55em;
+            height: 40.625em;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 1.875em;
+            border: solid 0.1875em #cdced1;
+            background: #131313;
+        }
+
+        .md-macbook-pro .md-camera {
+            width: 1.375em;
+            height: 1.375em;
+            margin: 0 auto;
+            position: relative;
+            top: 1.0625em;
+            background: #000;
+            border-radius: 100%;
+            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+        }
+
+        .md-macbook-pro .md-camera:after {
+            content: "";
+            display: block;
+            width: 1.125em;
+            height: 1.125em;
+            position: absolute;
+            left: 0.125em;
+            top: 0.0625em;
+            background: #353542;
+            border-radius: 100%;
+        }
+
+        .md-macbook-pro .md-screen {
+            width: 42.25em;
+            height: 26.375em;
+            margin: 0 auto;
+            position: relative;
+            top: 2.0625em;
+            background: #1d1d1d;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .md-macbook-pro .md-screen img {
+            width: 100%;
+        }
+
+        .md-macbook-pro .md-base {
+            width: 100%;
+            height: 0.9375em;
+            position: relative;
+            top: -0.75em;
+            background: #c6c7ca;
+        }
+
+        .md-macbook-pro .md-base:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 0.5em;
+            margin: 0 auto;
+            position: relative;
+            bottom: -0.1875em;
+            background: #b9babe;
+            border-radius: 0 0 1.25em 1.25em;
+        }
+
+        .md-macbook-pro .md-base:before {
+            content: "";
+            display: block;
+            width: 7.6875em;
+            height: 0.625em;
+            margin: 0 auto;
+            position: relative;
+            background: #a6a8ad;
+            border-radius: 0 0 0.625em 0.625em;
+        }
+
+        .md-macbook-pro.md-glare .md-lid:after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 0 1.25em 0 0;
+            background: -webkit-linear-gradient(37deg,
+                    rgba(255, 255, 255, 0) 50%,
+                    rgba(247, 248, 240, 0.025) 50%,
+                    rgba(250, 245, 252, 0.08));
+            background: -moz-linear-gradient(37deg,
+                    rgba(255, 255, 255, 0) 50%,
+                    rgba(247, 248, 240, 0.025) 50%,
+                    rgba(250, 245, 252, 0.08));
+            background: -o-linear-gradient(37deg,
+                    rgba(255, 255, 255, 0) 50%,
+                    rgba(247, 248, 240, 0.025) 50%,
+                    rgba(250, 245, 252, 0.08));
+            background: linear-gradient(53deg,
+                    rgba(255, 255, 255, 0) 50%,
+                    rgba(247, 248, 240, 0.025) 50%,
+                    rgba(250, 245, 252, 0.08));
+        }
+
+        .slider-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slidy-btn {
+            position: absolute;
+            right: 20px;
+            z-index: 1;
+        }
+
+        .prev-button {
+            font-weight: 500;
+            border-style: none;
+            color: #34a853;
+            background-color: #000000;
+            padding: 5px;
+            width: 100px;
+            margin-left: 5px;
+        }
+
+        .next-button {
+            font-weight: 500;
+            border-style: none;
+            color: #ffffff;
+            background-color: #34a853;
+            padding: 5px;
+            width: 100px;
+            margin-left: 5px;
+        }
+
+
+        .tab-container img {
+            height: 700px;
+        }
+
+        /* ------------------------------------------------------------------ ABOUT US SECTION END -------------------------------------------------------------- */
+
+        /* -------------------------------------------------------------------- BARANGAY OFFICIALS SECTION -------------------------------------------------------------- */
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #8d4410;
+            border-color: #108d6f;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007b5e;
+            border-color: #007b5e;
+        }
+
+        .image-flip:hover .backside,
+        .image-flip.hover .backside {
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            border-radius: 0.25rem;
+        }
+
+        .image-flip:hover .frontside,
+        .image-flip.hover .frontside {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+        .mainflip {
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -moz-transition: 1s;
+            -moz-transform: perspective(1000px);
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .frontside {
+            position: relative;
+            -webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            z-index: 2;
+            margin-bottom: 30px;
+            -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        }
+
+        .backside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: white;
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        }
+
+        .frontside,
+        .backside {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transition: 1s;
+            -moz-transform-style: preserve-3d;
+            -o-transition: 1s;
+            -o-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+
+        .frontside .card,
+        .backside .card {
+            min-height: 320px;
+            min-width: 219px;
+            background-color: #ffffffde;
+        }
+
+        .backside h4 {
+            top: 100px;
+            /* font-size: 18px; */
+            /* color: #007b5e !important; */
+        }
+
+        .frontside .card .card-title,
+        .backside .card .card-title {
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-body img {
+            /* width: 120px;
+            height: 120px; */
+            border-radius: 50%;
+        }
+
+        /* -------------------------------------------------------------------- BARANGAY OFFICIALS SECTION END -------------------------------------------------------------- */
+
+        @media (min-width: 993px) and (max-width: 1300px) {
+            .form-inline .input-group {
+                width: 300px;
+                /* margin-left: 30px; */
+            }
+
+            .frontside .card,
+            .backside .card {
+                min-height: 310px;
+                min-width: 140px;
+                background-color: #ffffffde;
+            }
+
+            .brgy-ofc {
+                position: relative;
+                right: 35px;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 992px) {
+
+            .frontside .card,
+            .backside .card {
+                min-height: 225px;
+                min-width: 100px;
+                background-color: #ffffffde;
+            }
+
+            #BRGY5,
+            #BRGY10 {
+                position: relative;
+                right: 5px;
+            }
+
+            .section4 h4 {
+                font-size: 14px;
+            }
+
+            .brgy-ofc {
+                position: relative;
+                right: 35px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 899px) {
+
+            .frontside .card,
+            .backside .card {
+                min-height: 225px;
+                min-width: 100px;
+                background-color: #ffffffde;
+            }
+
+            #BRGY5,
+            #BRGY10 {
+                left: 48px;
+            }
+
+            .section4 h4 {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar .dropdown-menu.action-form {
+                width: 100%;
+                padding: 10px 15px;
+                background: transparent;
+                border: none;
+            }
+
+            .navbar .form-inline {
+                display: block;
+            }
+
+            .navbar .input-group {
+                width: 100%;
+            }
+
+            #sgn-mdl {
+                /* background: linear-gradient(65deg, #194A84, #194A8478 75%, #9eb2d0 85%, #194A84); */
+                /* background-image: linear-gradient(128deg, #ffffff 65%, #34A853 40%); */
+                background-image: none;
+            }
+
+            #frgt-pass {
+                position: relative;
+                color: #34a853;
+                top: -40px;
+                left: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="#" class="navbar-brand">
+            <img id="section-logo" src="logo.png" width="100px" alt="" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <div class="navbar-nav">
+                <!-- <a href="#section1" class="nav-item nav-link active">HOME</a> -->
+                <a href="#section2" class="nav-item nav-link active">ANNOUNCEMENTS</a>
+                <a href="#section3" class="nav-item nav-link">ABOUT US</a>
+                <a href="#section4" class="nav-item nav-link">BARANGAY OFFICIALS</a>
+                <a href="#section5" class="nav-item nav-link">e-SERVICES</a>
+                <a href="#section6" class="nav-item nav-link">CONTACTS</a>
+            </div>
+
+            <div class="navbar-nav ml-auto action-buttons">
+                <button type="button" id="SU-btn" data-toggle="modal" data-target="#SignUpModal">
+                    Sign Up
+                </button>
+                <button type="button" id="SI-btn" data-toggle="modal" data-target="#SignInModal">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="modal fade" id="SignUpModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="SULabel" aria-hidden="true"> -->
+
+    <!-------------------------------------------------------------- Sign - Up / Registration Modal ------------------------------------------------------------->
+
+    <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SULabel" aria-hidden="true">
+        <!-- </div> -->
+
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div id="sgn-mdl" class="modal-content">
+                <!-- <div class="container"> -->
+                <div class="container mt-4 mb-3">
+                    <h5 class="modal-title" id="SULabel">Sign Up Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" class="form-control" id="fullname" placeholder="Surname" />
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="fullname"></label>
+                                <input type="text" class="form-control mt-2" id="fullname" placeholder="Firstn Name" />
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="fullname"></label>
+                                <input type="text" class="form-control mt-2" id="fullname" placeholder="Middle Name" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email or Mobile Number</label>
+                            <input type="text" class="form-control col-8" id="email"
+                                placeholder="Email or Mobile Number" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control col-8" id="password"
+                                placeholder="Create Password" />
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control col-8" id="confirmPassword"
+                                placeholder="Confirm Password" />
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-2">
+                                <label for="day">Date of Birth</label>
+                                <select id="day" class="form-control">
+                                    <!-- Add options for days here -->
+                                </select>
+                            </div>
+                            <div class="form-group col-2">
+                                <label for="month"></label>
+                                <select id="month" class="form-control mt-2">
+                                    <!-- Add options for months here -->
+                                </select>
+                            </div>
+                            <div class="form-group col-2">
+                                <label for="year"></label>
+                                <select id="year" class="form-control mt-2">
+                                    <!-- Add options for years here -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-2">
+                                <label for="age">Age</label>
+                                <input type="text" class="form-control" id="age" placeholder="Age" />
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-group col">
+                                    <label>Gender</label>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="male"
+                                            value="male" />
+                                        <label class="form-check-label" for="male">Male</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="female"
+                                            value="female" />
+                                        <label class="form-check-label" for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-start">
+                            <button type="submit" id="crt-acc" class="btn btn-primary col-5">
+                                Create Account
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------- Sign - Up / Registration Modal End ------------------------------------------------------------->
+
+    <!-- -------------------------------------------------------------------------  Sign in -------------------------------------------------------------------- -->
+
+    <div class="modal fade" id="SignInModal" tabindex="-1" role="dialog" aria-labelledby="SULabel" aria-hidden="true">
+        <!-- </div> -->
+
+        <div class="modal-dialog modal-lg" role="document">
+            <div id="sgn-mdl" class="modal-content">
+                <!-- <div class="container"> -->
+                <div class="container mt-4 mb-3">
+                    <h5 class="modal-title" id="SILabel">Sign In Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email or Mobile Number</label>
+                            <input type="text" class="form-control col-7" id="email"
+                                placeholder="Email or Mobile Number" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control col-7" id="password"
+                                placeholder="Create Password" />
+                        </div>
+
+                        <div class="form-group">
+                            <div class="text-start">
+                                <button type="submit" id="SI-lgn" class="btn btn-primary col-5">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- "Forgot Password?" link -->
+                        <div class="form-group">
+                            <!-- <div class="text-start"> -->
+                            <p class="text-start mt-4">
+                                <a id="frgt-pass" href="#" data-toggle="modal" data-dismiss="modal"
+                                    data-target="#ForgotPasswordModal">
+                                    Forgot Password?
+                                </a>
+                            </p>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="form-group">
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="text-start">
+                                <button type="submit" id="crt-new-acc" data-toggle="modal" data-dismiss="modal"
+                                    data-target="#SignUpModal" class="btn btn-primary col-5">
+                                    Create New Account
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------- Sign In End ------------------------------------------------------------------------->
+
+    <!-- <div class="container-fluid"> -->
+
+    <!-- Sections -->
+    <!-- <section id="section1" class="section section1">
+        <div class="container">
+            <p>This is the first section of your responsive page.</p>
+        </div>
+    </section> -->
+
+    <section id="section2" class="section section2">
+
+        <h1>
+            <a href="#section-logo" class="nav-item nav-link">ANNOUNCEMENTS</a>
+        </h1>
+
+        <div class="container">
+            <!-- <h1>ANNOUNCEMENTS</h1> -->
+        </div>
+    </section>
+
+    <!------------------------------------------------------------- ABOUT US SECTION 3 ------------------------------------------------->
+
+    <section id="section3" class="section section3">
+
+        <h1>
+            <a href="#section-logo" class="nav-item nav-link">ABOUT US</a>
+        </h1>
+
+        <div class="container-fluid">
+            <!-- <p>This is the third section of your responsive page.</p> -->
+
+            <div class="slidy-btn">
+                <button class="prev-button">Previous</button>
+                <button class="next-button">Next</button>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- begin panel group -->
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <!-- <div class="slidy-btn col">
+                  <button class="prev-button">Previous</button>
+                  <button class="next-button">Next</button>
+                </div> -->
+
+                            <div class="slider-container">
+                                <div class="slider">
+                                    <!-- panel 1 -->
+                                    <div class="slide panel panel-default">
+                                        <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                        <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab"
+                                            aria-expanded="false">
+                                            <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <h4 class="panel-title">VISION:</h4>
+                                            </div>
+                                        </span>
+
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                            aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <!-- Tab content goes here -->
+                                                REAL DE CACARONG A PROGRESSIVE, DEVELOPED AND A
+                                                PEACEFUL BARANGAY IN PANDI.
+                                                <p></p>
+                                                TO HAVE A MEANS OF LIVELIHOOD THAT WILL UPLIFT THE
+                                                LIVES OF SOCIETY TOWARD TO A BETTERMENT OF LIVE AS A
+                                                BARANGAY.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / panel 1 -->
+
+                                    <!-- panel 2 -->
+                                    <div class="slide panel panel-default">
+                                        <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                        <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab"
+                                            aria-expanded="false">
+                                            <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                <h4 class="panel-title collapsed">MISSION:</h4>
+                                            </div>
+                                        </span>
+
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <!-- Tab content goes here -->
+                                                TO SERVE THE PEOPLE, GOD FEARING, WHOLE HEARTEDLY,
+                                                FAST AND SYSTEMATIC, TEND TO ALL THE NEEDS OF THE
+                                                PEOPLE IN EVERY ASPECT PROTECT THEM FROM ALL THE BAD
+                                                SITUATION THAT MAY ARISES.
+                                               <p></p>
+                                                AS WELL AS TO GIVE KNOWLEDGE ON PROTECTING AND
+                                                CONSERVING THE NATURE.
+                                               <p></p>
+                                                BETTER PEOPLE FOR A BETTER BARANGAY
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / panel 2 -->
+
+                                    <!--  panel 3 -->
+                                    <div class="slide panel panel-default">
+                                        <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                        <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab"
+                                            aria-expanded="false">
+                                            <div class="panel-heading" role="tab" id="headingThree" class="collapsed"
+                                                data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <h4 class="panel-title">BRIEF HISTORY</h4>
+                                            </div>
+                                        </span>
+
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <!-- tab content goes here -->
+                                                Pandi was originally part of the Hacienda of
+                                                Dominicans named Hacienda which belongs to the Town
+                                                Santa Maria de Pandi (now Santa Maria, Bulacan). <p></p> In
+                                                1874 it was turn over to the town of Bigaa as one of
+                                                its Barrio and the religious activity belongs to
+                                                Convento de Bigaa under the auspices of Augustinian
+                                                order established a chapel under the advocacy of
+                                                Immaculate Concepcion.
+                                                <p></p>
+                                                During the Philippine
+                                                Revolution, Pandi played a vital and historical role
+                                                in the fight of Philippine independence, Pandi is
+                                                historically known for the Real de Kakarong de Sili
+                                                Shrine - Inang Filipina Shrine, the site where the
+                                                bloodiest revolution in Bulacan took place, where more
+                                                than 3,000 Katipuneros died.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / panel-group -->
+                    </div>
+                    <!-- /col-md-4 -->
+
+                    <div class="col-md-8">
+                        <!-- begin macbook pro mockup -->
+                        <div id="desktop" class="md-macbook-pro md-glare">
+                            <div class="md-lid">
+                                <div class="md-camera"></div>
+                                <div class="md-screen">
+                                    <!-- content goes here -->
+
+                                    <!-- <div class="tab-featured-image">
+                                        <div class="tab-content">
+
+                                            <div class="tab-pane  in active" id="tab1">
+
+                                                <img src="https://ununsplash.imgix.net/photo-1417024321782-1375735f8987?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950"
+                                                    alt="tab1" class="img img-responsive">
+
+                                            </div>
+                                            <div class="tab-pane " id="tab2">
+
+                                                <img
+                                                    src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950">
+
+                                            </div>
+                                            <div class="tab-pane fade" id="tab3">
+
+                                                <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950"
+                                                    alt="tab1" class="img img-responsive">
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- <div class="tab-container"> -->
+
+                                    <!-- Swiper slider container -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="https://ununsplash.imgix.net/photo-1417024321782-1375735f8987?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950"
+                                                    alt="tab1" class="img img-responsive" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="BRGY MISSION.jpg"
+                                                    alt="tab2" class="img img-responsive" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="BRGY BRIEF HISTORY.JPG"
+                                                    alt="Brgy Plaza" class="img img-responsive" />
+                                            </div>
+                                        </div>
+
+                                        <!-- Swiper navigation buttons (optional) -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                            <div class="md-base"></div>
+                        </div>
+                        <!-- end macbook pro mockup -->
+                    </div>
+                    <!-- / .col-md-8 -->
+                </div>
+                <!--/ .row -->
+            </div>
+            <!-- end sidetab container -->
+
+            <!-- <div id="abt-us" class="container mt-40">
+                <h3 class="text-center">Hover Effect Style : Demo - 5</h3>
+                <div class="row mt-30">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box5">
+                            <img class="pic-1" src="https://www.w3schools.com/bootstrap4/img_avatar3.png">
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search"></a></li>
+                                <li><a href="#" class="fa fa-link"></a></li>
+                            </ul>
+                            <div class="box-content">
+                                <h3 class="title">Williamson</h3>
+                                <span class="post">Web Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box5">
+                            <img class="pic-1" src="https://www.w3schools.com/bootstrap4/img_avatar4.png">
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search"></a></li>
+                                <li><a href="#" class="fa fa-link"></a></li>
+                            </ul>
+                            <div class="box-content">
+                                <h3 class="title">Kristiana</h3>
+                                <span class="post">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box5">
+                            <img class="pic-1" src="https://www.w3schools.com/bootstrap4/img_avatar5.png">
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search"></a></li>
+                                <li><a href="#" class="fa fa-link"></a></li>
+                            </ul>
+                            <div class="box-content">
+                                <h3 class="title">Kristiana</h3>
+                                <span class="post">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box5">
+                            <img class="pic-1" src="https://www.w3schools.com/bootstrap4/img_avatar5.png">
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search"></a></li>
+                                <li><a href="#" class="fa fa-link"></a></li>
+                            </ul>
+                            <div class="box-content">
+                                <h3 class="title">Kristiana</h3>
+                                <span class="post">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!------------------------------------------------------------- ABOUT US SECTION 3 END ------------------------------------------------->
+
+    <!------------------------------------------------------------- BARANGAY OFFICIALS SECTION 4 ------------------------------------------------->
+
+    <section style="
+        background-image: url('bg-pic\ new.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      " id="section4" class="section section4">
+        <h1>
+            <a href="#section-logo" class="nav-item nav-link">BARANGAY OFFICIALS</a>
+        </h1>
+        <!-- <div class="container-fluid"> -->
+
+        <div class="ml-5">
+            <!-- <h2>BARANGAY OFFICIALS</h2> -->
+
+            <!-- Team -->
+            <!-- <section id="team" class="pb-5"> -->
+
+            <!-- <div class="container-fluid"> -->
+            <div class="row-fluid brgy-ofc">
+                <!-- <h5 class="section-title"></h5> -->
+
+                <!-- <div class="row mt-5"> -->
+                <div class="row">
+                    <!-- Team member -->
+                    <div id="BRGY1" class="col-sm-2 ml-5 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png" alt="Chairman image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Punong Barangay <br />
+                                                (Chairman-Captain)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">Alejandro Serpa Juan Angeles</h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+
+                    <!-- Team member -->
+                    <div id="BRGY2" class="col-sm-2 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Barangay <br />
+                                                Secretary
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">
+                                                Victoria Pineda <br />
+                                                De Guzman
+                                            </h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div id="BRGY3" class="col-sm-2 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Councilor <br />
+                                                (Kagawad)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">Ronaldo Capalad Miranda</h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div id="BRGY4" class="col-sm-2 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Councilor <br />
+                                                (Kagawad)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">Jimmy De Guzman Cabildo</h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div id="BRGY5" class="col-sm-2">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Councilor <br />
+                                                (Kagawad)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">
+                                                Jillette De Leon <br />
+                                                De Guzman
+                                            </h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                </div>
+
+                <div class="row">
+                    <!-- Team member -->
+                    <div id="BRGY6" class="col-sm-2 ml-5 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Councilor <br />
+                                                (Kagawad)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">
+                                                Ma. Cecilia Tolentino De Guzman
+                                            </h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div id="BRGY7" class="col-sm-2 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Councilor <br />
+                                                (Kagawad)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">Edwin Cabildo Castro</h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div id="BRGY8" class="col-sm-2 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Councilor <br />
+                                                (Kagawad)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">Herminio Capalad Fabian</h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div id="BRGY9" class="col-sm-2 mr-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                Councilor <br />
+                                                (Kagawad)
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">Jeami Magtalas Evangelista</h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div id="BRGY10" class="col-sm-2">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="">
+                                            <p>
+                                                <img class="img-fluid mt-4 mb-3" src="BRGY-usr-i.png"
+                                                    alt="Councilor image" />
+                                            </p>
+                                            <h4 class="card-title">
+                                                SK <br />
+                                                Chairperson
+                                            </h4>
+                                            <p class="card-text"></p>
+                                            <a href="https://www.fiverr.com/share/qb8D02"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="mt-4">
+                                            <h4 class="card-title">Marc Dale Fabian Visande</h4>
+                                            <p class="card-text"><br /><br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+
+                    <!-- card row end -->
+                </div>
+            </div>
+            <!-- </section> -->
+            <!-- Team -->
+        </div>
+        <!-- </div> -->
+    </section>
+
+    <!------------------------------------------------------------- BARANGAY OFFICIALS SECTION 4 END ------------------------------------------------->
+
+    <section id="section5" class="section section5">
+
+        <h1>
+            <a href="#section-logo" class="nav-item nav-link">SERVICES</a>
+        </h1>
+
+        <div class="container">
+        </div>
+    </section>
+
+    <section id="section6" class="section section6">
+
+        <h1>
+            <a href="#section-logo" class="nav-item nav-link">CONTACTS</a>
+        </h1>
+
+        <div class="container">
+        </div>
+    </section>
+
+    <!-- </div> -->
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Swiper JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // var swiper = new Swiper('.swiper-container', {
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        //     loop: true, // Enable infinite loop
+        // });
+
+        //     document.addEventListener("DOMContentLoaded", function () {
+        //         // Your slider JavaScript code here
+
+        //         const slider = document.querySelector(".slider");
+        //         const slides = document.querySelectorAll(".slide");
+
+        //         let currentIndex = 0;
+
+        //         function updateSlider() {
+        //             slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        //         }
+        //         function nextSlide() {
+        //             currentIndex = (currentIndex + 1) % slides.length;
+        //             updateSlider();
+        //         }
+        //         function previousSlide() {
+        //             currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        //             updateSlider();
+        //         }
+        //         // Add event listeners for next and previous buttons or any other triggers
+        //         // For example:
+        //         document.querySelector(".next-button").addEventListener("click", nextSlide);
+        //         document.querySelector(".prev-button").addEventListener("click", previousSlide);
+
+        //     });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper(".swiper-container", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                loop: true,
+            });
+
+            const slider = document.querySelector(".slider");
+            const slides = document.querySelectorAll(".slide");
+            let currentIndex = 0;
+
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateSlider();
+                swiper.slideNext(); // Trigger Swiper slider to go to the next slide
+            }
+
+            function previousSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateSlider();
+                swiper.slidePrev(); // Trigger Swiper slider to go to the previous slide
+            }
+
+            document
+                .querySelector(".next-button")
+                .addEventListener("click", nextSlide);
+            document
+                .querySelector(".prev-button")
+                .addEventListener("click", previousSlide);
+        });
+
+        //     // <!-- Add this script tag at the end of your HTML, just before the closing  tag -->
+
+        // // JavaScript code to handle tab switching and slide show
+        //         document.addEventListener("DOMContentLoaded", function () {
+        //             // Variables for tracking the current tab and image
+        //             let currentTab = 1;
+        //         const numTabs = 3; // Total number of tabs
+
+        //         // Function to switch to a specific tab
+        //         function switchTab(tab) {
+        //             currentTab = tab;
+        //         $('.nav-tabs a[href="#tab' + tab + '"]').tab('show'); // Switch Bootstrap tab
+        //         $('.tab-content .tab-pane').removeClass('active'); // Hide all tab content
+        //         $('#tab' + tab).addClass('active'); // Show the selected tab content
+        //     }
+
+        //         // Function to navigate to the next tab
+        //         function nextTab() {
+        //             currentTab = currentTab < numTabs ? currentTab + 1 : 1;
+        //         switchTab(currentTab);
+        //     }
+
+        //         // Function to navigate to the previous tab
+        //         function prevTab() {
+        //             currentTab = currentTab > 1 ? currentTab - 1 : numTabs;
+        //         switchTab(currentTab);
+        //     }
+
+        //         // Initial tab and slide show setup
+        //         switchTab(currentTab);
+
+        //         // Event listeners for tab switching
+        //         $('.nav-tabs a').on('shown.bs.tab', function (e) {
+        //             currentTab = parseInt(e.target.getAttribute('data-tab')); // Update current tab
+        //     });
+
+        //         // Event listeners for "Previous" and "Next" buttons
+        //         $('.prev-button').on('click', function () {
+        //             prevTab();
+        //     });
+
+        //         $('.next-button').on('click', function () {
+        //             nextTab();
+        //     });
+        // });
+    </script>
+</body>
+
+</html>
